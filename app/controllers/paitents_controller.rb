@@ -1,4 +1,4 @@
-class PaitentsController < ApplicationController
+class PatientsController < ApplicationController
 
   def index
     @patients = Patient.all
@@ -6,6 +6,6 @@ class PaitentsController < ApplicationController
 
 
   def show
-    @patient = Patient.find(params[:id])  
+    @patient = Patient.find(params[:id])
   end
 end
